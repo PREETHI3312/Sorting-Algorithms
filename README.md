@@ -1,4 +1,5 @@
-# Selection sort and Insertion sort
+# DATE:
+# EX 8:Selection sort and Insertion sort
 ## Aim:
 To write a program to perform selection sort and insertion sort using python programming.
 ## Equipment’s required:
@@ -20,6 +21,13 @@ To write a program to perform selection sort and insertion sort using python pro
 ## Program:
 i)	#Selection Sort
 ```
+for i in range(len(num)):
+    low=i
+    for j in range(i+1,len(num)):
+        if num[j]<num[low]:
+            low=j
+    num[i],num[low]=num[low],num[i]
+print(num)
 
 
 
@@ -29,7 +37,14 @@ i)	#Selection Sort
 ii)	#Insertion Sort
 ```
 
-
+num=eval(input())
+for i in range(len(num)):
+    low=i
+    for j in range(i+1,len(num)):
+        if num[j]<num[low]:
+            low=j
+    num[i],num[low]=num[low],num[i]
+print(num)
 
 
 
@@ -37,6 +52,13 @@ ii)	#Insertion Sort
 ```
 
 ## Output:
+# Selection Sort
+![image](https://github.com/user-attachments/assets/09637d44-95da-4902-874a-4ef7a7da87ad)
+
+# Insertion Sort
+![image](https://github.com/user-attachments/assets/d04ae36d-0a8e-4e40-87ac-6341df878964)
+
+
 
 
 ## Result:
